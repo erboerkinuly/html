@@ -1,0 +1,170 @@
+<html> 
+<head> 
+<title> 
+Биография 
+</title> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" rel="stylesheet"> 
+</head> 
+<body> 
+
+	
+    <script>
+       
+        const number = 7;
+        let result = false;
+        
+        while (!result) {
+          const answer = prompt('1-10 аралығындағы санды тап?');
+          if (answer === null) {
+            break;
+          }
+          switch (+answer) {
+            case number - 2:
+            case number + 2:
+              alert('Жақын қалды!');
+              break;
+            case number - 1:
+            case number + 1:
+              alert('Сәл қалды!');
+              break;
+            case number:
+              alert('Пароль дурыс! Бұл сан {$number}.');
+              result = true;
+              break;
+            default:
+              alert('Алыс!');
+          }
+        }
+        </script>
+    
+    <link rel="stylesheet" type="text/css" href="10.css">
+    <link rel="stylesheet" type="text/css" href="11.css">
+    <link rel="stylesheet" type="text/css" href="12.css">
+    <link rel="stylesheet" type="text/css" href="13.css">
+    <link rel="stylesheet" type="text/css" href="14.css">
+    <link rel="stylesheet" type="text/css" href="15.css">
+<nav class="navbar navbar-expand-lg border-light"> 
+  <div class="container-fluid"> 
+    <b><a class="navbar-brand"> <span style="color:#32CD32;">Yer</span><span style="color:#4592BE;">bossyn</span></a></b> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarNav"> 
+      <ul class="navbar-nav"> 
+        <li class="nav-item"> 
+          <a class="nav-link active" aria-current="page" href="index.html"> Басты бет </a> 
+        </li> 
+        <li class="nav-item"> 
+          <b><a class="nav-link active" href="11.html"> Кесте </a></b> 
+        </li> 
+        <li class="nav-item"> 
+          <b><a class="nav-link active" href="12.html"> Медиа </a></b> 
+        </li> 
+        <li class="nav-item"> 
+          <b><a class="nav-link active" href="13.html"> Соц сети </a></b> 
+        </li> 
+        <li class="nav-item"> 
+          <b><a class="nav-link active" href="14.html"> Регистрация </a></b> 
+        </li> 
+        <li class="nav-item"> 
+          <b><a class="nav-link active" href="15.html"> Бос бет </a></b> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</nav> 
+ 
+<nav> 
+<div class="container"> 
+<body>
+	<form  method="post">
+		<p>Фамилия  <input type="text" name="username"></p>
+		<p>Есіміңіз  <input type="text" name="name"></p>
+		<p>Тегіңіз  <input type="text" name="отчество"></p>
+		<p>E-mail  <input type="text" name="E-mail"></p>
+		<p>Ел  
+			<select name="country">
+				<option value="number-1">Казақстан</option>
+				<option value="number-2">Өзбекстан</option>
+				<option value="number-3">ҚЫтай</option>
+				<option value="number-4">Канада</option>
+				<option value="number-5">Қырғызстан</option>
+				<option value="number-6">Түркия</option>
+				<option value="number-7">Корея</option>
+				<option value="number-8">Жапония</option>
+				<option value="number-9">Франция</option>
+				<option value="number-10">Италия</option>
+			</select>
+		</p>
+		<p>Қала<br>
+			<input type="radio" name="Алматы">Алматы<br>
+			<input type="radio" name="Астана">Астана<br>
+			<input type="radio" name="Шымкент">Шымкент<br>
+			<input type="radio" name="Семей">Семей<br>
+			<input type="radio" name="Қарағанды">Караганда
+		</p>
+		<p>Сөйлеу тілі<br>
+			<input type="checkbox" name="language">Казақ тілі<br>
+			<input type="checkbox" name="language">Өзбек тілі<br>
+			<input type="checkbox" name="language">Француз тілі<br>
+			<input type="checkbox" name="language">Ағылшын тілі<br>
+			<input type="checkbox" name="language">Немісше
+		</p>
+		<p>Мамандық таңдаңыз<br>
+			<select multiple name="profession">
+				<option value="number-1">Мұғалім</option>
+				<option value="number-2">Дәрігер</option>
+				<option value="number-3">Программист</option>
+				<option value="number-4">Инженер энергетик</option>
+				<option value="number-5">Архитектор</option>
+				<option value="number-6">Project-manager</option>
+				<option value="number-7">Фрилансер</option>
+				<option value="number-8">SMM</option>
+				<option value="number-9">Логист</option>
+				<option value="number-10">Проектировщик</option>
+			</select>
+		</p>
+		<p>Пароль
+			<input type="password" name="pswd">
+		</p>
+		<p>Өзіңіз туралы айтыңыз<br>
+			<textarea name="info" rows="5" cols="70">Мен ...</textarea>
+		</p>
+		<p>
+			<input type="hidden" name="student" value="Adema">
+		</p>
+		<p>
+			<input type="submit" name="button" value="Жіберу">
+		</p>
+		<p>
+			<input type="reset" name="clear" value="Тазалау">
+		</p>
+	</form>
+<A HREF="13.html">Кейін қайту</A> <br>
+<A HREF="15.html">Келесі бет</A>
+
+<div> 
+</nav> 
+ 
+<nav class="navbar navbar-expand-lg bg-light"> 
+<tfoot> 
+<tr> 
+  <td height=30>&copy; <b><span style="color:#32CD32;">Yer</span><span style="color:#4592BE;">bossyn</span>, 2003</b></td> 
+</tr> 
+</tfoot> 
+</nav> 
+ 
+<nav class="navbar navbar-expand-lg bg-dark"> 
+<tfoot> 
+<b> 
+<UL> 
+<LI>87762653365</LI> 
+<LI>87076722340</LI> 
+</UL> 
+</b> 
+</tfoot> 
+</nav> 
+ 
+</body> 
+</html>

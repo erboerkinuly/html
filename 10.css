@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/28/21/36/white-1866105__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+img{
+    width: 180;
+    height: 202;
+    filter:saturate(90%)
+}
+li{
+    text-transform: capitalize;
+}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1:hover {
+    background-color: #21e953;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
